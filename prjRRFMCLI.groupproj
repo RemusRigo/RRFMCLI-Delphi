@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{EFEB6D1B-4068-4E88-92AB-0F50BD74E298}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="RRFMCLI\RRFMCLI.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="RRFMCLI">
+        <MSBuild Projects="RRFMCLI\RRFMCLI.dproj"/>
+    </Target>
+    <Target Name="RRFMCLI:Clean">
+        <MSBuild Projects="RRFMCLI\RRFMCLI.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RRFMCLI:Make">
+        <MSBuild Projects="RRFMCLI\RRFMCLI.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="RRFMCLI"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="RRFMCLI:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="RRFMCLI:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
