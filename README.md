@@ -1,6 +1,6 @@
-# RRFMCLI
+# Remus Rigo File Manager CLI
 
-A Windows file manager command line utility
+A Windows file utility command line interface
 
 
 
@@ -11,27 +11,27 @@ A Windows file manager command line utility
 
 
 
-## Installation
+## Usage
 
-Just run RRFMCLI.exe for more info
+* RRFMCLI /UF /source:sorcefile /search:path
 
+  * /UF Update file (take source file and overwrite all files with the same name in the given path):
 
-
-## Features
-
-* 
+    * /source:sorcefile
+    * /search:path
 
 
 
 ## Statistics
 
-![status](https://img.shields.io/badge/status-in%20progress-orange)
+!\[status](https://img.shields.io/badge/status-in%20progress-orange)
 <br>
-![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/RemusRigo/RRFMCLI-Python/total)
+!\[GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/RemusRigo/RRFMCLI-Delphi/total)
+
 
 
 
 ## Roadmap
 
-* 2026-07-29: Add: /UF (Update File) command line parameters
+* 2026-07-29: Add: /UF Update file
 * 2026-07-29: Project started
